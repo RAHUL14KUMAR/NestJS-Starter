@@ -26,3 +26,9 @@ controllers part
 
 provider part
 # object can create various relationships with other objects.and function of wiring up this object can largely be delegated to ythe nes run time
+
+
+DTO(data transfer object)
+# through this we add the validation just like we set interface in typescript
+
+# we also add the validation in the schema thing llike emai have validation called ISEMAIL similarly for enum it hase ISEnum()
