@@ -23,3 +23,6 @@ controllers part
 # controllers is responsible for handlingg the incoming requests and returning responses to the client
 # in order to create a basic cotrollers we use classes and decorators
 # decorators associated with classes with required meta data and enable nest to create a routing map(tie request to the controller)
+
+provider part
+# object can create various relationships with other objects.and function of wiring up this object can largely be delegated to ythe nes run time
