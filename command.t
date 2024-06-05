@@ -32,3 +32,36 @@ DTO(data transfer object)
 # through this we add the validation just like we set interface in typescript
 
 # we also add the validation in the schema thing llike emai have validation called ISEMAIL similarly for enum it hase ISEnum()
+
+Global modules
+#if we want to impor tthe same set of modules every where ten we use global providers
+
+nest g resource folderName
+# this command will open alloe me to make coonection with restapi,graphql,websockets
+
+
+
+# in this application hwow we can setup RESTAPI in NESTJS
+
+# first use want to connect to dsatabase here we use prissma and inside the prisma we add the schema
+
+#  exports:[DatabaseService] ADD THIS IN THE DATABASE MODULE FOLDER
+
+# add the following in the database service folder
+# import { Injectable,OnModuleInit } from '@nestjs/common';
+# import { PrismaClient } from '@prisma/client';
+# @Injectable()
+# export class DatabaseService extends PrismaClient implements OnModuleInit{
+#     async onModuleInit() {
+#         await this.$connect()
+#     }
+# }
+
+
+# inside the emplorees we crete an resouces of restapi by calling last code function
+
+# inside the employees resources add the datbase module by importing 
+# import { DatabaseModule } from 'src/database/database.module';
+
+# @Module({
+#   imports:[DatabaseModule], 
